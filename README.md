@@ -13,4 +13,4 @@ The Game typically includes features such as:
 5) Displaying the full word and outcome at the end of the game.
 
 
-# Note : This code is just an example of hangman game and it still be improved a lot.
+### Note : This code is just an example of hangman game and it still be improved a lot.
