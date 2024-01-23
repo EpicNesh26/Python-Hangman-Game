@@ -1,4 +1,4 @@
-# Next Up : I will add a Dictionary API so that user has more words to guess from and will increase the limits accordingly , and also make the hangman Figure a better and a little longer so that the games lasts for more time.
+### Next Up : I will add a Dictionary API so that user has more words to guess from and will increase the limits accordingly , and also make the hangman Figure a better and a little longer so that the games lasts for more time.
 
 
 
