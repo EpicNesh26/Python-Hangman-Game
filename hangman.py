@@ -18,7 +18,7 @@ def play_again():
 def hangman(word):
   display = '_' * len(word)
   count = 0
-  limit = 5
+  limit = 9
   letters = list(word)
   guessed = []
   while count < limit:
@@ -83,8 +83,8 @@ def hangman(word):
                     '  |     | \n'
                     '  |     | \n'
                     '  |     O \n'
-                    '  |      \n'
-                    '  |      \n'
+                    '  |       \n'
+                    '  |       \n'
                     '__|__\n')
               print(f'Wrong guess: {limit - count} guesses remaining\n')
 
@@ -95,11 +95,55 @@ def hangman(word):
                     '  |     | \n'
                     '  |     | \n'
                     '  |     O \n'
+                    '  |     | \n'
+                    '  |       \n'
+                    '__|__\n')
+              print(f'Wrong guess: {limit - count} guesses remaining\n')
+          elif count == 6:
+              time.sleep(1)
+              print('   _____ \n'
+                    '  |     | \n'
+                    '  |     | \n'
+                    '  |     | \n'
+                    '  |     O \n'
+                    '  |    /| \n'
+                    '  |       \n'
+                    '__|__\n')
+              print(f'Wrong guess: {limit - count} guesses remaining\n')
+          elif count == 7:
+              time.sleep(1)
+              print('   _____ \n'
+                    '  |     | \n'
+                    '  |     | \n'
+                    '  |     | \n'
+                    '  |     O \n'
+                    '  |    /|\ \n'
+                    '  |        \n'
+                    '__|__\n')
+              print(f'Wrong guess: {limit - count} guesses remaining\n')
+          elif count == 8:
+              time.sleep(1)
+              print('   _____ \n'
+                    '  |     | \n'
+                    '  |     | \n'
+                    '  |     | \n'
+                    '  |     O \n'
+                    '  |    /|\ \n'
+                    '  |    /  \n'
+                    '__|__\n')
+              print(f'Wrong guess: {limit - count} guesses remaining\n')
+          elif count == 9:
+              time.sleep(1)
+              print('   _____ \n'
+                    '  |     | \n'
+                    '  |     | \n'
+                    '  |     | \n'
+                    '  |     O \n'
                     '  |    /|\ \n'
                     '  |    / \ \n'
                     '__|__\n')
-              print('Wrong guess. You\'ve been hanged!!!\n')
-              print(f'The word was: {word}')
+              print(f'Wrong guess: {limit - count} guesses remaining\n')
+          
 
       if display == word:
           print(f'Congrats! You have guessed the word \'{word}\' correctly!')
@@ -116,8 +160,8 @@ def play_hangman():
    os.system('cls' if os.name == 'nt' else 'clear')
 
    words_to_guess = [
-       'january', 'border', 'image', 'film', 'promise', 'kids',
-       'lungs', 'doll', 'rhyme', 'damage', 'plants', 'hello', 'world'
+       'programming language', 'programmer', 'software', 'computer program',  'machine code','arrays','coding',
+       "python",'games','bugs','errors','methods','github'
    ]
    play = True
    while play:
